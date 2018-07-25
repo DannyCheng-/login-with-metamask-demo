@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
 
+import docu_logo from './docu_logo.svg';
+import wallet from './wallet.svg';
+
 import './Login.css';
 
 let web3 = null; // Will hold the web3 instance
@@ -87,19 +90,27 @@ class Login extends Component {
     const { loading } = this.state;
     return (
       <div>
-        <p>
-          Please select your login method.<br />For the purpose of this demo,
-          only MetaMask login is implemented.
-        </p>
-        <button className="Login-button Login-mm" onClick={this.handleClick}>
-          {loading ? 'Loading...' : 'Login with MetaMask'}
-        </button>
-        <button className="Login-button Login-fb" disabled>
-          Login with Facebook
-        </button>
-        <button className="Login-button Login-email" disabled>
-          Login with Email
-        </button>
+        <div className="DocuEditor-header">
+          <h1>
+            DocuEditor
+          </h1>
+          <img src={docu_logo} className="DocuEditor-logo" alt="DocuEditor-logo"/>
+        </div>
+        <div className="welcome">
+          <p>
+            Welcome! Give or receive help on that resume, recommendation letter, personal statement, and thesis soon!​
+          </p>
+          <p>
+            To start using DocuEditor, please deposit some Ether into your Office 365 crypto wallet.
+            All digital agreements & transactions are handled on the Ethereum blockchain via smart contracts. ​
+          </p>
+        </div>
+        <div className="Login">
+          <img src={wallet} className="wallet" alt="DocuEditor-logo"/>
+          <button className="Login-button Login-mm" onClick={this.handleClick}>
+            {loading ? 'Loading...' : 'Login with MetaMask'}
+          </button>
+        </div>
       </div>
     );
   }

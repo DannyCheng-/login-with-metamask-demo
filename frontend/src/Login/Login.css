@@ -3,7 +3,7 @@
   display: block;
   font-size: 16px;
   height: 60px;
-  margin: 10px auto;
+  margin: auto 12rem;
   width: 300px;
 }
 
@@ -11,14 +11,21 @@
   opacity: 0.9;
 }
 
-.Login-email {
-  background-color: darkgray;
-}
-
-.Login-fb {
-  background-color: rgb(72, 98, 163);
-}
-
 .Login-mm {
   background-color: rgb(255, 125, 0);
+}
+
+.DocuEditor-header, .Login
+{
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.welcome
+{
+  text-align: left;
+  margin-left: 10rem;
 }
