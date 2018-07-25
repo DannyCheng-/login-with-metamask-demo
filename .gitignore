@@ -1,7 +1,9 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-#database
-tmp
+# Logs and databases
+*.log
+*.sql
+*.sqlite
 
 # dependencies
 node_modules
