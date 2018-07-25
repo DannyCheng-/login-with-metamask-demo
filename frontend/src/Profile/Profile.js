@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Blockies from 'react-blockies';
 import jwtDecode from 'jwt-decode';
 
+import docu_logo from './docu_logo.svg';
+import wallet from './wallet.svg';
+
 import './Profile.css';
 
 class Profile extends Component {
@@ -57,23 +60,24 @@ class Profile extends Component {
 
     return (
       <div className="Profile">
-        <p>
-          Logged in as <Blockies seed={publicAddress} />
-        </p>
-        <div>
-          My username is {username ? <pre>{username}</pre> : 'not set.'} My
-          publicAddress is <pre>{publicAddress}</pre>
+        <div className="wallet-header">
+            <div className="DocuEditor-header">
+              <h1>
+                DocuEditor
+              </h1>
+              <img src={docu_logo} className="DocuEditor-logo" alt="DocuEditor-logo"/>
+            </div>
         </div>
-        <div>
-          <label htmlFor="username">Change username: </label>
-          <input name="username" onChange={this.handleChange} />
-          <button disabled={loading} onClick={this.handleSubmit}>
-            Submit
-          </button>
+        <div className="user">
+          <div className="icon">
+            <img src={wallet} className="wallet-icon" alt="DocuEditor-logo"/>
+            <h2 className="balance" >0.5ETC</h2>
+          </div>
+          <p>
+            Logged in as <Blockies seed={publicAddress} />
+          </p>
+          <button className="Logout" onClick={onLoggedOut}>Logout</button>
         </div>
-        <p>
-          <button onClick={onLoggedOut}>Logout</button>
-        </p>
       </div>
     );
   }

@@ -2,3 +2,48 @@
   border-radius: 50%;
   vertical-align: middle;
 }
+
+.Profile
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.user
+{
+  margin-right: 10rem;
+}
+
+.icon
+{
+  position: relative; 
+}
+
+.wallet-icon
+{
+  width: 200px;
+  height: 150px;
+}
+
+.balance
+{
+  font-size: 20px;
+  position: absolute; 
+  top: 60px; 
+  left: 0; 
+  width: 100%; 
+}
+
+.Logout
+{
+  background-color: #da3b01;
+  color: white;
+  border: 1px solid #344146;
+  border-color: #d83b01;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
