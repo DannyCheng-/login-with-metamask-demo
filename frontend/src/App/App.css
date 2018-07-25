@@ -31,3 +31,130 @@
     transform: rotate(360deg);
   }
 }
+
+.category-header {
+  background: #da3b01;
+}
+.category-header section.grid > ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 0;
+  cursor: pointer;
+  min-height: 50px;
+  display: inline-flex;
+}
+@media screen and (min-width: 769px) {
+  .category-header section.grid > ul {
+    min-height: 70px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .category-header section.grid > ul {
+    padding-left: 10px;
+  }
+}
+.category-header .header-link {
+  color: white;
+  display: block;
+  padding: 1.1rem 0.7rem;
+}
+.category-header .header-link:focus,
+.category-header .header-link:hover {
+  color: white;
+  background-color: #AC2F00;
+  text-decoration: none;
+}
+@media screen and (min-width: 769px) {
+  .category-header .header-link {
+    padding: 2rem 1.2rem;
+  }
+}
+.category-header section.grid {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1605px;
+}
+@media (min-width: 899px) {
+  .category-header section.grid {
+    width: 90.5%;
+  }
+}
+@media (min-width: 1819px) {
+  .category-header section.grid {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .category-header section.grid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .category-header .header-item {
+    display: inline-block;
+    height: 70px;
+    width: auto;
+  }
+}
+.category-header .waffle-icon {
+  font-size: 2rem;
+  margin-left: 0;
+}
+.category-header .waffle-link {
+  padding: 0;
+  position: relative;
+  top: 1.6rem;
+}
+.category-header .waffle-link:hover,
+.category-header .waffle-link:focus {
+  background-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .category-header #header-install-office-link,
+  .category-header #header-share-office-link {
+    display: none;
+  }
+}
+.category-header .officeLogo-icon {
+  margin-left: 0;
+  margin-right: 5px;
+  font-size: 2rem;
+  position: relative;
+  top: 0.5rem;
+}
+@media screen and (min-width: 769px) {
+  .category-header .officeLogo-icon {
+    top: -0.4rem;
+  }
+}
+.category-header .officeLogo-link {
+  margin-left: 0.7rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 769px) {
+  .category-header .officeLogo-link span {
+    position: relative;
+    top: -0.8rem;
+  }
+}
+.category-header .officeLogo-link-nowaffle {
+  margin-left: 0;
+  padding-left: 0;
+}
+.category-header .float-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (-ms-high-contrast: active) {
+  .category-header a:focus,
+  .category-header a:hover,
+  .category-header a:active {
+    text-decoration: underline;
+  }
+}
