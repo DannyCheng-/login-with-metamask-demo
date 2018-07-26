@@ -36,7 +36,7 @@
   width: 100%; 
 }
 
-.Logout
+.Logout, .Continue
 {
   background-color: #da3b01;
   color: white;
@@ -46,4 +46,72 @@
   padding-right: 45px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.dragFile, .contract
+{
+  margin-left: 10rem;
+}
+
+.dragFileH1
+{
+  border: 2px dashed #bbb;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: auto;
+  width: 80%;
+}
+
+.drop-zone-hide
+{
+  display: none;
+}
+
+.drop-zone-show
+{
+  position: fixed;
+  display: flex;
+  background: rgba(17, 109, 210, 0.5);
+  border: 15px solid #0c3158;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: auto;
+  font-family: 'Roboto';
+}
+
+.content
+{
+  position: relative;
+}
+
+#list
+{
+  margin-left: 10rem;
+}
+
+.Continue
+{
+  float: right;
+  margin-top: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: -10;
+}
+
+.dragFile p, .contract p, .contract h3
+{
+  text-align: left;
 }
