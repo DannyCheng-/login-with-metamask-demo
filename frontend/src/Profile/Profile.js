@@ -65,7 +65,7 @@ class Profile extends Component {
     var contract = web3.eth.contract(abi);
     var contractInstance = contract.at(contractAddress);
 
-    contractInstance.deposit();
+    // contractInstance.deposit();
 
     //contract.methods.getOneCoin(contractAddress).send({from:"******", gas:3000000}).then(
     //);
