@@ -222,27 +222,32 @@ class DropZoneWrapper extends Component {
 }
 
 class SmartContract extends Component {
-  //合约部分
-  //设置web3对象
+  constructor() {
+    super();
+    this.state = {
+      showClick: true
+    }
+  }
 
   create = () => {
-    var table = [];
+    var code = [];
 
-    table.push("<p>contract Transfer {</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;uint public price;</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;function Price(uint p) public {</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price = p;</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;function f(uint a) public returns(uint) }</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uint result = a * 8;</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return result;</p>");
-    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>");
-    table.push("<p>}</p>");
+    code.push("<p>contract Transfer {</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;uint public price;</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;function Price(uint p) public {</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price = p;</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;function f(uint a) public returns(uint) }</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uint result = a * 8;</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return result;</p>");
+    code.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>");
+    code.push("<p>}</p>");
 
-    document.getElementById('code').innerHTML = table.join("");
+    document.getElementById('code').innerHTML = code.join("");
   };
 
   ShowContract = () => {
+    this.setState({showClick: false});
     this.create();
   };
 
@@ -259,11 +264,7 @@ class SmartContract extends Component {
           If you are not satisfied with the result, you can request the expert to fine-tune
           The payment is non-refundable</p>
         </div>
-        
-        <a id="smartContract" onClick={this.ShowContract}>Click here to view the source contract</a>
-        
-        {/* <code>{'contract Transfer {'}</code>
-        <code>{'uint public price;\n'}</code> */}
+        <a id="smartContract" href="#code" onClick={this.ShowContract} style={{display: this.state.showClick ? 'block' : 'none' }}>Click here to view the source contract</a>
         <span id="code"></span>
       </div>
     );
