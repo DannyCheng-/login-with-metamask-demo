@@ -4,7 +4,8 @@ import jwtDecode from 'jwt-decode';
 
 import docu_logo from './docu_logo.svg';
 import wallet from './wallet.svg';
-
+import Web3 from 'web3';
+import json from './GetCoin.json';
 import './Profile.css';
 
 class Profile extends Component {
@@ -54,6 +55,20 @@ class Profile extends Component {
 
   Continue = () => {
     this.setState({contract: true});
+    if (this.state.contract === true) this.GetContract();
+  };
+
+  GetContract = () => {
+    var web3 = new Web3('http://127.0.0.1:8545');
+    var abi = json["abi"];
+    var contractAddress = "0xd876b3c72b1f093f77822ee8a3eed2b12ff956f6";
+    var contract = web3.eth.contract(abi);
+    var contractInstance = contract.at(contractAddress);
+
+    contractInstance.deposit();
+
+    //contract.methods.getOneCoin(contractAddress).send({from:"******", gas:3000000}).then(
+    //);
   };
 
   render() {
@@ -207,13 +222,49 @@ class DropZoneWrapper extends Component {
 }
 
 class SmartContract extends Component {
+  //合约部分
+  //设置web3对象
+
+  create = () => {
+    var table = [];
+
+    table.push("<p>contract Transfer {</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;uint public price;</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;function Price(uint p) public {</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price = p;</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;function f(uint a) public returns(uint) }</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uint result = a * 8;</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return result;</p>");
+    table.push("<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>");
+    table.push("<p>}</p>");
+
+    document.getElementById('code').innerHTML = table.join("");
+  };
+
+  ShowContract = () => {
+    this.create();
+  };
+
   render() {
     return (
       <div className="contract">
         <p>
           You are almost there! The final step is for both parties (you and Anna) to accept the Smart Contract for this digital agreement. You can accept the Smart Contract we have generated for you, or you can first edit it, then accept it. Once you have accepted the Smart Contract, we will notify Anna and ask her to accept as well.
         </p>
+        
         <h3>Smart Contract</h3>
+        <div>
+          <p>You will pay <span>0.5</span> ETH in this transaction. The transaction will last for 7 days, you can cancel the transaction in first 1 hour from starting time.
+          If you are not satisfied with the result, you can request the expert to fine-tune
+          The payment is non-refundable</p>
+        </div>
+        
+        <a id="smartContract" onClick={this.ShowContract}>Click here to view the source contract</a>
+        
+        {/* <code>{'contract Transfer {'}</code>
+        <code>{'uint public price;\n'}</code> */}
+        <span id="code"></span>
       </div>
     );
   }
