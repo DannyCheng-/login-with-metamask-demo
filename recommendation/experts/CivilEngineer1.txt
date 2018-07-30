@@ -1,0 +1,10 @@
+Developed design to monitor water usage among wholesale customers in Charlottesville, VA, by installing 35 strategically located flow meters in underground vaults. Worked closely with client and vendors to create system that can accurately track the distribution of water in real time.
+
+Conducted surge analysis and mitigation design using PRVs in below grade vaults for fire
+Conducted a validation study of the US EPA SWMM5 BMP modules. Responsible building and running the model to perform the calibration and validation of the modules and writing report.
+Assisted in design of 72" sewer and 20" reclaimed water mains in Loudoun County, VA.
+Designed water and sewer mains for walking mall in Winchester, VA.
+Created master plan for 12 MGD distribution system in Manassas, VA, using hydraulic model.
+Helped develop and implement stormwater utility fee in Manassas, VA.
+Performed assessments of water availability by building and running hydraulic models for new
+Collaborated with other engineers on citywide assessment of storm sewer infrastructure to identify

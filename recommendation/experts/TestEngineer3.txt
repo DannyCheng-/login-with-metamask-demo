@@ -1,0 +1,7 @@
+Worked in Agile software development environment, consisting of 2 week sprint cycles, to complete user stories.
+
+Utilized Selenium testing framework and Java to automate UI testing of web application components according to manual test plan.
+Analyzed software bugs and applied fixes, adhering to best practices, naming conventions, and design patterns utilized by the team.
+Utilized GIT software versioning control system.
+Consulted with fellow team members for code design discussions.
+Participated in peer code reviews using Crucible + Fisheye.

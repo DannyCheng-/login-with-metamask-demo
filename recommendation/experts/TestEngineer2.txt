@@ -1,0 +1,6 @@
+Knowledge on several communication protocols
+
+Analyzed testing result and design testing code with C for chip operate system, WCDMA protocol and
+Optimized testing software structure to improve the testing performance. Compared with old structure, the
+Designed and developed flash memory management mechanism and backup mechanism by C for SIM card
+Develop verification tools to perform third party certification for technical support by using C ++ language

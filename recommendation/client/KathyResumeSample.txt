@@ -1,0 +1,8 @@
+Tested and provided technical support for Jabber on iPhone, Android and iPad which integrated with UCM, UC, and LDAP.
+
+Contributed technical Collaborated with global teams to implement a testing strategy which increased testing coverage by 75%.
+Built internal VoIP lab based on customer specifications. Improved quality of software with 60% bug resolution rate resulting in a 92% (4.65/5) customer satisfaction rate.
+Wrote and executed over 859 test cases; enhanced quality of products delivered to customers.
+Improved customer facing documentation during software development life cycle.
+Successfully assisted internal and external customer programs. Reduced need for additional Maintenance Releases (MR).
+Mentored and helped new team members; provided common understanding among the team.

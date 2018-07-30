@@ -1,0 +1,8 @@
+Worked on testing some of the Hotel Management, Library Management, Inventory Management and Call Center Management solutions using QTP, Selenium Web driver.
+
+Performed Web based and application based testing of the software solutions and provided support for the customer issues.
+Experienced with working in fast-paced AGILE development environments.
+Performed manual and automation testing of the products in the SDLC life cycle.
+Performed some database testing using Oracle Database 9i and MySQL 5.0 databases.
+Created test plans and executed test cases on a daily basis in a multi-project environment.
+Manage test schedule and delivered test results in timely manner, defined and measured test coverage.

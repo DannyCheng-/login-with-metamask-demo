@@ -1,0 +1,12 @@
+Provided quality assurance testing for a web-based tax research application. Developed and executed manual test cases for product certification. Documented and managed discovered defects. Defined process improvements.
+
+Developed, maintained, and executed manual test cases. As part of a team, a 3000+ test case repository was created and maintained to certify the product met the business objectives and requirements.
+Performed functional, regression, compatibility, usability, security, and ad-hoc testing. Resulted in 100% reported defects with 0% post-production customer issues.
+Identified, reported, and managed defects in the defect tracking system resulting in a reduction of duplicate defects due to communication with the development team.
+Mentored three SQA team members as needed, on requirements analysis and developing test cases, thereby increasing the availability to work on individual projects.
+Consolidated existing test cases resulting in the reduction of duplicated steps and increasing valuable time to concentrate on higher risk features during quarterly releases.
+Defined consistency guidelines for the SQA team to provide test case portability when contractors or other key personnel were needed to assist in test case execution.
+Provided weekly status of quality assurance activities via written and verbal communication.
+Project participation with offsite personnel during the requirements phase, development, and production release. Increased tester knowledge of assigned feature, questions and comments during the development phase, allowing for thorough testing prior to production.
+Assisted in the creation and maintenance of automated scripts to increase efficiency and reduce manual test coverage. Decreased the need for an additional contractor.
+Provided application expertise to technical support on an as needed basis to assist in customer resolution.
